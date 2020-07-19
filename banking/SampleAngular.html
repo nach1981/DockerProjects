@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<header>RO MASTER FORM </header>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+	<br></br>
+
+	<form
+		action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeOnRHL2YA51kugDliyyqs6bZKz4EmHxNZcF7q36Ub4iaAeVQ/formResponse"
+		target="_self" method="POST">
+
+		<table class="w3-table w3-bordered w3-striped">
+			<tr>
+				<th>State : <select ng-model="state">
+						<option value="">
+    <option value="ODISHA">OD
+    <option value="KARNATAKA">KA
+    <option value="WEST BENGAL">WB
+ <option value="GOA">GA
+<option value="MAHARASTRA">MH
+<option value="UTTAR PRADESH">UP
+
+<h1><input type="text" value ={{state}} name = "entry.1032610761" </h1>
+
+  </select>
+</th>
+
+<th><p>District : <input type="text" name = "entry.1379739136"></p></th>
+<th><p>Land Purchase Cost : <input type="number" ng-model="land" name = "entry.1243964219"></p></th>
+<th><p>Investment : <input type="number" ng-model="inv" value = {{land}} name = "entry.1194066990" ></p></th>
+
+</tr>
+
+
+<div ng-app="" ng-init="quantity=0;cost=0">
+
+
+
+
+
+
+<tr>
+<th><p>Civil : <input type="number" ng-model="civil" name = "entry.1832483609"></p></th>
+<th><p>Road : <input type="number" ng-model="road" name = "entry.583122139"></p></th>
+<th><p>P&M AR: <input type="number" ng-model="ar" name = "entry.20819472"></p></th>
+<th><p>P&M OTH: <input type="number" ng-model="oth" name = "entry.871957842"></p></th>
+<th><p>Enabling: <input type="number" ng-model="enb" name = "entry.1408643348"></p></th>
+</tr>
+
+
+
+
+
+
+<tr>
+<th> <p>Appropriation Value : {{ civil + road + ar + oth + enb }}</p></th>
+
+
+<th><p>Gross Investment : {{ inv + road + ar+ ot+ enb }}</p></th>
+
+<th>
+<input type = "submit" value= "Submit">
+</th>
+
+<tr>
+
+<br></br>
+
+
+
+</div>
+
+</table>
+</form>
+
+</body>
+</html>
